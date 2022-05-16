@@ -1,10 +1,11 @@
 # TemplateX - easy read string in table from toml file
 
-[![Release](https://jitpack.io/com/github/Programistich/TemplateX.svg)](https://jitpack.io/com/github/Programistich/TemplateX)
+The library was created on the basis https://mvnrepository.com/artifact/org.tomlj/tomlj
 
-**Example**
+[![Release](https://jitpack.io/v/Programistich/TemplateX.svg)](https://jitpack.io/#Programistich/TemplateX)
+
+**Example** (template.toml)
 ```toml
-(template.toml)
 [Start]
 en="Hello, its project TemplateX by {}"
 ru="Привет, это проект TemplateX от {}"
@@ -19,7 +20,7 @@ reader.get("Start", "en") // Hello, its project TemplateX by {}
 reader.get("Start", "ru", "https://github.com/Programistich") // <- Привет, это проект TemplateX от https://github.com/Programistich
 ```
 
-*How to use*
+**How to use**
 
 *Gradle KTS*
 ```kotlin
